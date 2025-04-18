@@ -21,6 +21,5 @@ The app validates user input in real-time, ensuring that the information entered
 ### 🧪 Running the Project
 
 1. Clone this repository:
-   ```bash
    git clone https://github.com/yourusername/javafx-registration-form.git
-   cd javafx-registration-form
+
