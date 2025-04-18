@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="edu.farmingdale.regex.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane fx:id="screenPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="999.0" stylesheets="@../../../../../target/classes/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.farmingdale.regex.HelloController">
+   <children>
+      <AnchorPane fx:id="registerForm" layoutX="296.0" layoutY="206.0" prefHeight="389.0" prefWidth="407.0" stylesheets="@../../../../../target/classes/style.css">
+         <children>
+            <Label fx:id="firstNameLabel" layoutX="20.0" layoutY="63.0" prefHeight="17.0" prefWidth="102.0" text="First name: " AnchorPane.bottomAnchor="309.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="lastNameLabel" layoutX="20.0" layoutY="94.0" prefHeight="17.0" prefWidth="102.0" text="Last name: " />
+            <Label fx:id="emailLabel" layoutX="20.0" layoutY="134.0" prefHeight="17.0" prefWidth="102.0" text="Email: " />
+            <Label fx:id="dobLabel" layoutX="20.0" layoutY="172.0" prefHeight="25.0" prefWidth="131.0" text="Date of birth: " />
+            <Label fx:id="zipCodeLabel" layoutX="20.0" layoutY="214.0" prefHeight="17.0" prefWidth="102.0" text="Zip code: " />
+            <TextField fx:id="firstNameField" layoutX="152.0" layoutY="50.0" />
+            <TextField fx:id="lastNameField" layoutX="152.0" layoutY="96.0" />
+            <TextField fx:id="emailField" layoutX="152.0" layoutY="136.0" />
+            <TextField fx:id="dobField" layoutX="152.0" layoutY="176.0" />
+            <TextField fx:id="zipCodeField" layoutX="152.0" layoutY="216.0" />
+            <Button fx:id="registerButton" layoutX="201.0" layoutY="284.0" mnemonicParsing="false" onAction="#changeScreenButton" prefHeight="25.0" prefWidth="60.0" text="Add" />
+            <Label fx:id="warningLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="14.0" prefHeight="17.0" prefWidth="395.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,3 +1,23 @@
-#registerForm{
+
+.registerForm{
     color: red;
+}
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+}
+.text-field{
+    -fx-border-radius: 10px;
+    -fx-background-color: #e4e3e3;
+}
+.button{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #0A599D;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    font-family: sans-serif;
+    font-size: 14px;
 }
